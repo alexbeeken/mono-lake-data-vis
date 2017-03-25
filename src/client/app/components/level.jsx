@@ -9,7 +9,6 @@ const Level = React.createClass({
     for (var i = 0; i < lines.length; i++) {
       output.push(this.buildLine(years[i], lines[i]))
     }
-    console.log(output)
     return output
   },
 
@@ -44,6 +43,7 @@ const Level = React.createClass({
     for (var i = 0; i < lineData.length; i++) {
       output.push(
         <LineSeries
+        key={i}
         color="red"
         data={lineData[i]}/>
       )
@@ -51,7 +51,6 @@ const Level = React.createClass({
     return output
   },
   render() {
-    console.log(this.props.levels.length)
       return (<XYPlot
               width={600}
               yDomain={[6371, 6382]}

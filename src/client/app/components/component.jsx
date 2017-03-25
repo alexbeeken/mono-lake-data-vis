@@ -12,7 +12,6 @@ const Component = React.createClass({
     };
   },
   onSliderChange(value) {
-    log(value);
     this.setState({
       value,
     });
