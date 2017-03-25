@@ -13,7 +13,7 @@ const partialYears = [
   0.747,
   0.830,
   0.913,
-  0.996,
+  0.996
 ]
 
 const LevelContinuous = React.createClass({
@@ -42,7 +42,7 @@ const LevelContinuous = React.createClass({
     )
     return output
   },
-  
+
   render() {
       return (<XYPlot
               width={600}

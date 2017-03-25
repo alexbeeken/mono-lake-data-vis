@@ -10,7 +10,7 @@ const HistoryBox = React.createClass({
     }
     return output
   },
-  
+
   render() {
     return (
       <div className='history-entries'>
