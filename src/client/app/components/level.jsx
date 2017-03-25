@@ -1,23 +1,35 @@
 import React from 'react';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
 
+const colors = [
+  '#000000',
+  '#2E00E5',
+  '#7100E1',
+  '#B200DD',
+  '#D900C2',
+  '#D5007E',
+  '#D2003D',
+  '#CE0100',
+  '#CA3E00',
+  '#C67800',
+  '#C2B100',
+  '#96BF00',
+  '#D8FF4C',
+  '#8E9966',
+  '#20F3EE',
+  '#F3202D',
+  '#CA6B3F',
+  '#BBAA5D',
+  '#91BB5D',
+  '#475832'
+]
+
 const Level = React.createClass({
   data() {
     const lines = this.props.levels
-    const years = this.fillInYearsArray(this.props.years)
     let output = []
     for (var i = 0; i < lines.length; i++) {
-      output.push(this.buildLine(years[i], lines[i]))
-    }
-    return output
-  },
-
-  fillInYearsArray(yearsRange) {
-    var start = parseInt(yearsRange[0])
-    var end = parseInt(yearsRange[1])
-    var output = []
-    for (var i = (start); i <= end; i++) {
-      output.push(i)
+      output.push(this.buildLine(this.years()[i], lines[i]))
     }
     return output
   },
@@ -37,6 +49,14 @@ const Level = React.createClass({
     ]
   },
 
+  years() {
+    return (this.props.years)
+  },
+
+  color(year) {
+    return colors[year % 1979]
+  },
+
   buildLineSeries() {
     var output = []
     var lineData = this.data()
@@ -44,7 +64,7 @@ const Level = React.createClass({
       output.push(
         <LineSeries
         key={i}
-        color="red"
+        color={this.color(this.years()[i])}
         data={lineData[i]}/>
       )
     }
