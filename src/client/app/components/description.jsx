@@ -371,7 +371,9 @@ const Description = React.createClass({
     <div>
       <p>Year: {library[this.props.index]['year']}</p>
       <p>history: {library[this.props.index]['history']}</p>
-      <Level levels={library[this.props.index]['levels']} year={library[this.props.index]['year']}/>
+      <div className='level-graph'>
+        <Level levels={[library[this.props.index]['levels']]} year={library[this.props.index]['year']}/>
+      </div>
     </div>
     );
   }

@@ -1,5 +1,9 @@
 @import "./node_modules/react-vis/dist/style";
 
-div .year-label {
-  font-size: 100px
-};
+.rv-xy-plot__inner {
+  padding-left: 20px
+}
+
+.rv-xy-plot__axis__title text {
+  font-size: 20px
+}
