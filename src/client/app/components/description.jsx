@@ -369,7 +369,6 @@ const Description = React.createClass({
   levelsForIndices(indices) {
     var output = []
     for (var i = indices[0]; i < indices[1]; i++) {
-      console.log(library[i])
       output.push(library[i]['levels'])
     }
     return output
