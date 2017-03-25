@@ -1,7 +1,8 @@
+import histories from './histories.jsx'
 
 const library = [{
   year: '1979',
-  history: ['entry 1'],
+  history: [0],
   levels: [
     6374.70,
     6374.86,
@@ -19,7 +20,7 @@ const library = [{
 },
 {
   year: '1980',
-  history: ['entry 1'],
+  history: [],
   levels: [
     6373.01,
     6373.39,
@@ -37,7 +38,7 @@ const library = [{
 },
 {
   year: '1981',
-  history: ['entry 2'],
+  history: [1],
   levels: [
     6373.59,
     6373.78,
@@ -55,7 +56,7 @@ const library = [{
 },
 {
   year: '1982',
-  history: ['entry 2'],
+  history: [],
   levels: [
     6372.02,
     6372.06,
@@ -73,7 +74,7 @@ const library = [{
 },
 {
   year: '1983',
-  history: ['entry 3'],
+  history: [2],
   levels: [
     6374.08,
     6374.60,
@@ -91,7 +92,7 @@ const library = [{
 },
 {
   year: '1984',
-  history: ['entry 4'],
+  history: [3,4],
   levels: [
     6379.91,
     6380.31,
@@ -109,7 +110,7 @@ const library = [{
 },
 {
   year: '1985',
-  history: ['entry 5'],
+  history: [5,6],
   levels: [
     6379.89,
     6380.00,
@@ -127,7 +128,7 @@ const library = [{
 },
 {
   year: '1986',
-  history: ['entry 6'],
+  history: [7],
   levels: [
     6378.63,
     6378.66,
@@ -145,7 +146,7 @@ const library = [{
 },
 {
   year: '1987',
-  history: ['entry 7'],
+  history: [8],
   levels: [
     6380.10,
     6380.20,
@@ -163,7 +164,7 @@ const library = [{
 },
 {
   year: '1988',
-  history: ['entry 7'],
+  history: [],
   levels: [
     6379.00,
     6379.10,
@@ -181,7 +182,7 @@ const library = [{
 },
 {
   year: '1989',
-  history: ['entry 8'],
+  history: [9,10,11,12,13],
   levels: [
     6376.80,
     6376.80,
@@ -199,7 +200,7 @@ const library = [{
 },
 {
   year: '1990',
-  history: ['entry 9'],
+  history: [14,15,17],
   levels: [
     6375.32,
     6375.57,
@@ -217,7 +218,7 @@ const library = [{
 },
 {
   year: '1991',
-  history: ['entry 9'],
+  history: [16,17],
   levels: [
     6374.80,
     6374.80,
@@ -235,7 +236,7 @@ const library = [{
 },
 {
   year: '1992',
-  history: ['entry 9'],
+  history: [17],
   levels: [
     6374.10,
     6374.20,
@@ -253,7 +254,7 @@ const library = [{
 },
 {
   year: '1993',
-  history: ['entry 9'],
+  history: [17],
   levels: [
     6373.50,
     6373.90,
@@ -271,7 +272,7 @@ const library = [{
 },
 {
   year: '1994',
-  history: ['entry 9'],
+  history: [17,18],
   levels: [
     6374.80,
     6375.10,
@@ -289,7 +290,7 @@ const library = [{
 },
 {
   year: '1995',
-  history: ['entry 9'],
+  history: [19,20],
   levels: [
     6374.50,
     6375.10,
@@ -307,7 +308,7 @@ const library = [{
 },
 {
   year: '1996',
-  history: ['entry 9'],
+  history: [20],
   levels: [
     6378.10,
     6378.40,
@@ -325,7 +326,7 @@ const library = [{
 },
 {
   year: '1997',
-  history: ['entry 9'],
+  history: [21],
   levels: [
     6380.40,
     6381.10,
@@ -343,7 +344,7 @@ const library = [{
 },
 {
   year: '1998',
-  history: ['entry 9'],
+  history: [22],
   levels: [
     6382.00,
     6382.40,
