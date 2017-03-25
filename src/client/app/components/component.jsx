@@ -7,17 +7,13 @@ const Component = React.createClass({
     return {
       defaultValue: [0,1],
       min: 0,
-      max: 18,
-      dots: true
+      max: 75
     };
   },
   onSliderChange(value) {
     this.setState({
       value,
     });
-  },
-  onAfterChange(value) {
-    console.log(value);
   },
   render() {
     return (
@@ -30,7 +26,6 @@ const Component = React.createClass({
           max={this.state.max}
           min={this.state.min}
           defaultValue={this.state.defaultValue}
-          dots={this.state.dots}
           allowCross={false}
         />
       </div>

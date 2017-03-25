@@ -1,45 +1,35 @@
 import React from 'react';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
 
-const colors = [
-  '#000000',
-  '#2E00E5',
-  '#7100E1',
-  '#B200DD',
-  '#D900C2',
-  '#D5007E',
-  '#D2003D',
-  '#CE0100',
-  '#CA3E00',
-  '#C67800',
-  '#C2B100',
-  '#96BF00',
-  '#D8FF4C',
-  '#8E9966',
-  '#20F3EE',
-  '#F3202D',
-  '#CA6B3F',
-  '#BBAA5D',
-  '#91BB5D',
-  '#475832'
+const partialYears = [
+  0.083,
+  0.166,
+  0.249,
+  0.332,
+  0.415,
+  0.498,
+  0.581,
+  0.664,
+  0.747,
+  0.830,
+  0.913,
+  0.996,
 ]
 
 const LevelContinuous = React.createClass({
   data() {
     const lines = this.props.levels
     let output = []
+    let years = this.props.years
     let index = 0
-    for (var i = 0; i < lines.length; i++) {
+    for (var i = 0; i < years.length; i++) {
       for (var j = 0; j < lines[i].length; j++) {
-        output.push({ "x": index, "y":  lines[i][j]})
-        index++
+        if (lines[i][j]) {
+          output.push({ "x": years[i] + partialYears[j], "y":  lines[i][j]})
+        }
       }
     }
     return output
-  },
-
-  years() {
-    return (this.props.years)
   },
 
   buildLineSeries() {
@@ -55,7 +45,7 @@ const LevelContinuous = React.createClass({
   render() {
       return (<XYPlot
               width={600}
-              yDomain={[6371, 6500]}
+              yDomain={[6371, 6430]}
               height={300}>
               <HorizontalGridLines />
               {this.buildLineSeries()}
