@@ -25,11 +25,26 @@ const Description = React.createClass({
     )
   },
 
+  isUniqueValue(array, int) {
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] == int) {
+        return false
+      }
+    }
+    return true
+  },
+
   historiesRanges(indices) {
     var output = []
     for (var i = indices[0]; i < indices[1]; i++) {
-        output.push(library[i]['history']);
+        var history = library[i]['history']
+        for (var j = 0; j < history.length; j++) {
+          if (this.isUniqueValue(output, history[j])) {
+            output.push(history[j])
+          }
+        }
     }
+    console.log(output)
     return output
   },
 
@@ -47,7 +62,7 @@ const Description = React.createClass({
     return (
     <div>
       <h2>{this.formatYears(this.yearsRanges(this.props.indices))}</h2>
-      <div className='data-box'>
+      <div className='data-box full'>
         <h3>History</h3>
         <HistoryBox entries={this.historiesRanges(this.props.indices)} />
       </div>
