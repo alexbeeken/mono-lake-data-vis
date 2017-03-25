@@ -44,7 +44,6 @@ const Description = React.createClass({
           }
         }
     }
-    console.log(output)
     return output
   },
 
@@ -58,14 +57,22 @@ const Description = React.createClass({
     return output
   },
 
+  renderHistory() {
+    if (this.historiesRanges(this.props.indices).length > 0) {
+      return(
+        <div className='data-box full'>
+        <h3>History</h3>
+        <HistoryBox entries={this.historiesRanges(this.props.indices)} />
+        </div>
+      )
+    }
+  },
+
   render() {
     return (
     <div>
       <h2>{this.formatYears(this.yearsRanges(this.props.indices))}</h2>
-      <div className='data-box full'>
-        <h3>History</h3>
-        <HistoryBox entries={this.historiesRanges(this.props.indices)} />
-      </div>
+      {this.renderHistory()}
       <div className='data-box'>
         <h3>Water Level by Month</h3>
         <Level levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
