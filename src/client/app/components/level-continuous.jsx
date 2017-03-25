@@ -42,6 +42,7 @@ const LevelContinuous = React.createClass({
     )
     return output
   },
+  
   render() {
       return (<XYPlot
               width={600}
