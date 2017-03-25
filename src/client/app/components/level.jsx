@@ -45,7 +45,9 @@ const Level = React.createClass({
       { "x": 7, "y":  level[6]},
       { "x": 8, "y":  level[7]},
       { "x": 9, "y":  level[8]},
-      { "x": 10, "y":  level[9]}
+      { "x": 10, "y":  level[9]},
+      { "x": 11, "y":  level[10]},
+      { "x": 12, "y":  level[11]}
     ]
   },
 

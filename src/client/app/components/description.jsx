@@ -368,8 +368,9 @@ import Level from './level.jsx'
 const Description = React.createClass({
   levelsForIndices(indices) {
     var output = []
-    for (var i = 0; i < indices.length; i++) {
-      output.push(library[indices[i]]['levels'])
+    for (var i = indices[0]; i < indices[1]; i++) {
+      console.log(library[i])
+      output.push(library[i]['levels'])
     }
     return output
   },
@@ -388,7 +389,7 @@ const Description = React.createClass({
 
   historiesRanges(indices) {
     var output = []
-    for (var i = 0; i < indices[1]; i++) {
+    for (var i = indices[0]; i < indices[1]; i++) {
         output.push(library[i]['history']);
     }
     return output
