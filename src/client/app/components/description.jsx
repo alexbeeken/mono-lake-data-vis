@@ -366,13 +366,35 @@ import React from 'react';
 import Level from './level.jsx'
 
 const Description = React.createClass({
+  levelsForIndices(indices) {
+    var output = []
+    for (var i = 0; i < indices.length; i++) {
+      output.push(library[indices[i]]['levels'])
+    }
+    return output
+  },
+
+  yearsRanges(indices) {
+    return (
+      library[indices[0]]['year'] + 'through' + library[indices[1]]['year']
+    )
+  },
+
+  historiesRanges(indices) {
+    var output = []
+    for (var i = 0; i < indices.length; i++) {
+        output.push(library[i]['history']);
+    }
+    return output
+  },
+
   render() {
     return (
     <div>
-      <p>Year: {library[this.props.index]['year']}</p>
-      <p>history: {library[this.props.index]['history']}</p>
+      <p>Years: {this.yearsRanges(this.props.indices)}</p>
+      <p>history: {this.historiesRanges(this.props.indices)}</p>
       <div className='level-graph'>
-        <Level levels={[library[this.props.index]['levels']]} year={library[this.props.index]['year']}/>
+        <Level levels={this.levelsForIndices(this.props.indices)}/>
       </div>
     </div>
     );

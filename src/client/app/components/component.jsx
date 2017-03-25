@@ -9,7 +9,7 @@ function log(value) {
 const Component = React.createClass({
   getInitialState() {
     return {
-      defaultValue: 0,
+      defaultValue: [0,1],
       min: 0,
       max: 18,
       dots: true
@@ -28,7 +28,7 @@ const Component = React.createClass({
     return (
     <div>
       <div className='slider'>
-        <Slider
+        <Range
           value={this.state.value}
           onChange={this.onSliderChange}
           onAfterChange={this.onAfterChange}
@@ -36,11 +36,12 @@ const Component = React.createClass({
           min={this.state.min}
           defaultValue={this.state.defaultValue}
           dots={this.state.dots}
+          allowCross={false}
         />
       </div>
       <div className='description'>
         <Description
-          index={this.state.value || this.state.defaultValue}
+          indices={this.state.value || this.state.defaultValue}
         />
       </div>
     </div>
