@@ -5,7 +5,7 @@ const HistoryBox = React.createClass({
     var output = []
     var entries = this.props.entries
     for (var i = 0; i < entries.length; i++) {
-      output.push(<li key={i}>entries[i]</li>)
+      output.push(<li key={i}>{entries[i]}</li>)
     }
     return output
   },

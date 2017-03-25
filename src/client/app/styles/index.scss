@@ -9,15 +9,16 @@
 }
 
 .data-box {
-  float: right;
+  float: left;
   width: 50%;
-  height: 300px;
+  height: 400px;
+  overflow: scroll;
   h3 {
     text-align: center;
   }
 }
 
 .history-entries {
-  height: inherit;
+  height: 300px;
   overflow: scroll;
 }
