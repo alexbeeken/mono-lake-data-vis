@@ -376,7 +376,13 @@ const Description = React.createClass({
 
   yearsRanges(indices) {
     return (
-      library[indices[0]]['year'] + 'through' + library[indices[1]]['year']
+      [library[indices[0]]['year'], library[indices[1]]['year']]
+    )
+  },
+
+  formatYears(years) {
+    return (
+      years[0] + ' through ' + years[1]
     )
   },
 
@@ -391,10 +397,10 @@ const Description = React.createClass({
   render() {
     return (
     <div>
-      <p>Years: {this.yearsRanges(this.props.indices)}</p>
+      <p>Years: {this.formatYears(this.yearsRanges(this.props.indices))}</p>
       <p>history: {this.historiesRanges(this.props.indices)}</p>
       <div className='level-graph'>
-        <Level levels={this.levelsForIndices(this.props.indices)}/>
+        <Level levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
       </div>
     </div>
     );

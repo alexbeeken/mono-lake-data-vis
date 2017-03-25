@@ -2,10 +2,6 @@ import React from 'react';
 import Slider, { Range } from 'rc-slider';
 import Description from './description.jsx'
 
-function log(value) {
-  console.log(value); //eslint-disable-line
-}
-
 const Component = React.createClass({
   getInitialState() {
     return {
