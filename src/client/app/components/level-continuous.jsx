@@ -55,7 +55,7 @@ const LevelContinuous = React.createClass({
   render() {
       return (<XYPlot
               width={600}
-              yDomain={[6371, 6382]}
+              yDomain={[6371, 6500]}
               height={300}>
               <HorizontalGridLines />
               {this.buildLineSeries()}

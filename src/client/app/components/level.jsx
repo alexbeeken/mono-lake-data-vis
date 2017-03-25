@@ -1,5 +1,5 @@
 import React from 'react';
-import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
+import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries, Hint} from 'react-vis';
 
 const colors = [
   '#000000',
@@ -67,21 +67,32 @@ const Level = React.createClass({
         <LineSeries
         key={i}
         color={this.color(this.years()[i])}
-        data={lineData[i]}/>
+        data={lineData[i]}
+        onMouseEnter={this.mouseOver}
+        onMouseLeae={this.mouseLeave}
+        />
       )
     }
     return output
   },
+
   render() {
-      return (<XYPlot
+      return (
+        <div className='data-box'>
+          <h3>Water Level by Month</h3>
+           <XYPlot
               width={600}
-              yDomain={[6371, 6382]}
-              height={300}>
+              yDomain={[6371, 6500]}
+              height={300}
+              onMouseEnter={this.active}
+              onMouseLeave={this.inactive}>
               <HorizontalGridLines />
               {this.buildLineSeries()}
               <XAxis title="months" />
               <YAxis title="lake level"/>
-            </XYPlot>);
+            </XYPlot>
+        </div>
+      );
   }
 });
 

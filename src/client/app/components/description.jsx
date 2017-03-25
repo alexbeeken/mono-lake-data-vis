@@ -72,15 +72,12 @@ const Description = React.createClass({
     return (
     <div>
       <h2>{this.formatYears(this.yearsRanges(this.props.indices))}</h2>
-      {this.renderHistory()}
-      <div className='data-box'>
-        <h3>Water Level by Month</h3>
-        <Level levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
-      </div>
+      <Level levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
       <div className='data-box'>
         <h3>Water Level Continuous</h3>
         <LevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
       </div>
+      {this.renderHistory()}
     </div>
     );
   }
