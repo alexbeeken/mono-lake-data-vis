@@ -364,6 +364,7 @@ const library = [
 
 import React from 'react';
 import Level from './level.jsx'
+import HistoryBox from './history-box.jsx'
 
 const Description = React.createClass({
   levelsForIndices(indices) {
@@ -408,8 +409,12 @@ const Description = React.createClass({
     return (
     <div>
       <p>Years: {this.fillInYearsArray(this.formatYears(this.yearsRanges(this.props.indices)))}</p>
-      <p>history: {this.historiesRanges(this.props.indices)}</p>
-      <div className='level-graph'>
+      <div className='data-box'>
+        <h3>History</h3>
+        <HistoryBox entries={this.historiesRanges(this.props.indices)} />
+      </div>
+      <div className='data-box'>
+        <h3>Water Level by Month</h3>
         <Level levels={this.levelsForIndices(this.props.indices)} years={this.yearsRanges(this.props.indices)}/>
       </div>
     </div>

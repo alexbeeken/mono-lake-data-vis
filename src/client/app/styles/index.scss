@@ -7,3 +7,17 @@
 .rv-xy-plot__axis__title text {
   font-size: 20px
 }
+
+.data-box {
+  float: right;
+  width: 50%;
+  height: 300px;
+  h3 {
+    text-align: center;
+  }
+}
+
+.history-entries {
+  height: inherit;
+  overflow: scroll;
+}
