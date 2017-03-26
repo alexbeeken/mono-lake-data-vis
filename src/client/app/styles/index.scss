@@ -1,11 +1,11 @@
 @import "./node_modules/react-vis/dist/style";
 
 .rv-xy-plot__inner {
-  padding-left: 20px
+  padding-left: 20px;
 }
 
 .rv-xy-plot__axis__title text {
-  font-size: 20px
+  font-size: 20px;
 }
 
 .data-box {
@@ -23,4 +23,13 @@
 .history-entries {
   max-height: 300px;
   overflow: scroll;
+}
+
+.birds {
+  padding-left: 20px;
+  max-height: 900px;
+  overflow: scroll;
+  .rv-xy-plot__inner {
+    padding-left: 55px !important;
+  }
 }

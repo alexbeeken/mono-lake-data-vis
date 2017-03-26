@@ -1,5 +1,5 @@
 import React from 'react';
-import {XYPlot, XAxis, YAxis, HorizontalGridLines, VerticalBarSeries, Hint} from 'react-vis';
+import {XYPlot, XAxis, YAxis, HorizontalGridLines, HorizontalBarSeries, Hint} from 'react-vis';
 import birds1998 from '../data/1998birdcounts.jsx'
 
 const BirdCounts = React.createClass({
@@ -24,8 +24,9 @@ const BirdCounts = React.createClass({
     let output = []
     for (var i = 0; i < birds.length; i++) {
       if (birds[i]) {
+        console.log(birds[i])
         output.push(
-          { "x": i+1, "y":  birds[i]}
+          { "x": birds[i]['COUNT'], "y": i, }
         )
       }
     }
@@ -41,7 +42,7 @@ const BirdCounts = React.createClass({
     var barData = this.data()
     for (var i = 0; i < barData.length; i++) {
       output.push(
-        <VerticalBarSeries
+        <HorizontalBarSeries
           key={i}
           data={barData[i]}
         />
@@ -52,19 +53,21 @@ const BirdCounts = React.createClass({
 
   render() {
       return (
-        <div className='data-box full'>
+        <div className='data-box'>
           <h3>Bird Counts</h3>
-          <XYPlot
-            width={1000}
-            yDomain={[6371, 6430]}
-            height={300}
-            onMouseEnter={this.active}
-            onMouseLeave={this.inactive}>
-            <HorizontalGridLines />
-            {this.buildBarSeries()}
-            <XAxis title="months" tickFormat={this.tickFormatter}/>
-            <YAxis title="lake level"/>
-          </XYPlot>
+          <div className='birds'>
+            <XYPlot
+              width={550}
+              xDomain={[0, 2400]}
+              height={700}
+              onMouseEnter={this.active}
+              onMouseLeave={this.inactive}>
+              <HorizontalGridLines />
+              {this.buildBarSeries()}
+              <XAxis title='count'/>
+              <YAxis title='species' tickFormat={this.tickFormatter} tickSizeOuter={1} tickTotal={53} tickLabelAngle={-45}/>
+            </XYPlot>
+          </div>
         </div>
       );
   }

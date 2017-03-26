@@ -16,7 +16,7 @@ const birds1998 = [
     "COUNT": 5
   },
   {
-    "SPECIES": "Black-crowned Night Heron",
+    "SPECIES": "Black-crowned Night Hn",
     "COUNT": 3
   },
   {
@@ -152,7 +152,7 @@ const birds1998 = [
     "COUNT": 2
   },
   {
-    "SPECIES": "Least/Western Sandpiper",
+    "SPECIES": "Least/Wst Sandpiper",
     "COUNT": 1361
   },
   {
