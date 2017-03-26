@@ -1,7 +1,7 @@
 import React from 'react';
-import Level from './level.jsx'
+import WaterLevel from './water-level.jsx'
 import PoliticalHistoryBox from './political-history-box.jsx'
-import LevelContinuous from './level-continuous.jsx'
+import WaterLevelContinuous from './water-level-continuous.jsx'
 import BirdCounts from './bird-counts.jsx'
 import library from '../data/years.jsx'
 
@@ -59,7 +59,7 @@ const Description = React.createClass({
     return output
   },
 
-  renderHistory() {
+  renderPoliticalHistory() {
     if (this.historiesRanges(this.props.indices).length > 0) {
       return(
         <PoliticalHistoryBox entries={this.historiesRanges(this.props.indices)} />
@@ -84,12 +84,9 @@ const Description = React.createClass({
     return (
     <div>
       <h2>{this.formatYears(this.yearsRanges(this.props.indices))}</h2>
-      <Level levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
-      <div className='data-box'>
-        <h3>Water Level Continuous</h3>
-        <LevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
-      </div>
-      {this.renderHistory()}
+      <WaterLevel levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
+      <WaterLevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
+      {this.renderPoliticalHistory()}
       {this.renderBirdCounts()}
     </div>
     );

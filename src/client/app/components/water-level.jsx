@@ -17,7 +17,7 @@ const months = [
   'Dec'
 ]
 
-const Level = React.createClass({
+const WaterLevel = React.createClass({
   data() {
     const lines = this.props.levels
     let output = []
@@ -68,7 +68,6 @@ const Level = React.createClass({
           <h3>Water Level by Month</h3>
            <XYPlot
               width={600}
-              yDomain={[6371, 6430]}
               height={300}
               onMouseEnter={this.active}
               onMouseLeave={this.inactive}>
@@ -82,4 +81,4 @@ const Level = React.createClass({
   }
 });
 
-export default Level;
+export default WaterLevel;

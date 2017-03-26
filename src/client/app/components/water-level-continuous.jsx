@@ -16,7 +16,7 @@ const partialYears = [
   0.996
 ]
 
-const LevelContinuous = React.createClass({
+const WaterLevelContinuous = React.createClass({
   data() {
     const lines = this.props.levels
     let output = []
@@ -43,17 +43,33 @@ const LevelContinuous = React.createClass({
     return output
   },
 
+  tickFormatter(tick) {
+    return Math.floor(tick).toString()
+  },
+
+  tickNumber() {
+    return Math.min(this.props.years.length, 10)
+  },
+
   render() {
-      return (<XYPlot
-              width={600}
-              yDomain={[6371, 6430]}
-              height={300}>
-              <HorizontalGridLines />
-              {this.buildLineSeries()}
-              <XAxis title="months" />
-              <YAxis title="lake level"/>
-            </XYPlot>);
+      return (
+        <div className='data-box'>
+          <h3>Water Level Continuous</h3>
+          <XYPlot
+            width={600}
+            yDomain={[6371, 6420]}
+            height={300}>
+            <HorizontalGridLines />
+            {this.buildLineSeries()}
+            <XAxis
+              title="years"
+              tickFormat={this.tickFormatter}
+              tickTotal={this.tickNumber()}
+            />
+            <YAxis title="lake level"/>
+          </XYPlot>
+        </div>);
   }
 });
 
-export default LevelContinuous;
+export default WaterLevelContinuous;
