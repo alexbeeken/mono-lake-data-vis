@@ -60,7 +60,7 @@ const BirdCounts = React.createClass({
               <HorizontalGridLines />
               {this.buildBarSeries()}
               <XAxis title='count'/>
-              <YAxis title='species' tickFormat={this.tickFormatter} tickSizeOuter={1} tickTotal={53} tickLabelAngle={-45}/>
+              <YAxis title='species' tickFormat={this.tickFormatter} tickSizeOuter={1} tickTotal={32} tickLabelAngle={-45}/>
             </XYPlot>
           </div>
         </div>
