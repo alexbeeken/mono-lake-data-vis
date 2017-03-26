@@ -1,6 +1,7 @@
 import React from 'react';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, HorizontalBarSeries, Hint} from 'react-vis';
 import birds from '../data/birdcounts.jsx'
+import colors from '../data/colors.jsx'
 
 const BirdCounts = React.createClass({
   data() {
@@ -38,6 +39,7 @@ const BirdCounts = React.createClass({
         <HorizontalBarSeries
           key={i}
           data={barData[i]}
+          color={colors[i]}
         />
       )
     }
