@@ -1,7 +1,7 @@
 const library = [
   {
     year: '1941',
-    history: [],
+    politicalHistory: [],
     levels: [
       null,
       null,
@@ -19,7 +19,7 @@ const library = [
   },
   {
     year: '1942',
-    history: [],
+    politicalHistory: [],
     levels: [
       6417.14,
       6417.33,
@@ -37,7 +37,7 @@ const library = [
   },
   {
     year: '1943',
-    history: [],
+    politicalHistory: [],
     levels: [
       6417.15,
       6417.64,
@@ -55,7 +55,7 @@ const library = [
   },
   {
     year: '1944',
-    history: [],
+    politicalHistory: [],
     levels: [
       6417.53,
       6417.64,
@@ -73,7 +73,7 @@ const library = [
   },
   {
     year: '1945',
-    history: [],
+    politicalHistory: [],
     levels: [
       6416.33,
       6416.39,
@@ -91,7 +91,7 @@ const library = [
   },
   {
     year: '1946',
-    history: [],
+    politicalHistory: [],
     levels: [
       6417.38,
       6417.46,
@@ -109,7 +109,7 @@ const library = [
   },
   {
     year: '1947',
-    history: [],
+    politicalHistory: [],
     levels: [
       6417.37,
       6417.56,
@@ -127,7 +127,7 @@ const library = [
   },
   {
     year: '1948',
-    history: [],
+    politicalHistory: [],
     levels: [
       6415.68,
       6415.73,
@@ -145,7 +145,7 @@ const library = [
   },
   {
     year: '1949',
-    history: [],
+    politicalHistory: [],
     levels: [
       6413.58,
       6413.60,
@@ -163,7 +163,7 @@ const library = [
   },
   {
     year: '1950',
-    history: [],
+    politicalHistory: [],
     levels: [
       6411.45,
       6411.50,
@@ -181,7 +181,7 @@ const library = [
   },
   {
     year: '1951',
-    history: [],
+    politicalHistory: [],
     levels: [
       6410.02,
       6409.92,
@@ -199,7 +199,7 @@ const library = [
   },
   {
     year: '1952',
-    history: [],
+    politicalHistory: [],
     levels: [
       6407.89,
       6408.00,
@@ -217,7 +217,7 @@ const library = [
   },
   {
     year: '1953',
-    history: [],
+    politicalHistory: [],
     levels: [
       6408.70,
       6408.88,
@@ -235,7 +235,7 @@ const library = [
   },
   {
     year: '1954',
-    history: [],
+    politicalHistory: [],
     levels: [
       6407.02,
       6407.09,
@@ -253,7 +253,7 @@ const library = [
   },
   {
     year: '1955',
-    history: [],
+    politicalHistory: [],
     levels: [
       6404.83,
       6404.80,
@@ -271,7 +271,7 @@ const library = [
   },
   {
     year: '1956',
-    history: [],
+    politicalHistory: [],
     levels: [
       6403.04,
       6403.23,
@@ -289,7 +289,7 @@ const library = [
   },
   {
     year: '1957',
-    history: [],
+    politicalHistory: [],
     levels: [
       6402.03,
       6402.28,
@@ -307,7 +307,7 @@ const library = [
   },
   {
     year: '1958',
-    history: [],
+    politicalHistory: [],
     levels: [
       6401.02,
       6401.05,
@@ -325,7 +325,7 @@ const library = [
   },
   {
     year: '1959',
-    history: [],
+    politicalHistory: [],
     levels: [
       6401.18,
       6401.22,
@@ -343,7 +343,7 @@ const library = [
   },
   {
     year: '1960',
-    history: [],
+    politicalHistory: [],
     levels: [
       6399.32,
       6399.22,
@@ -361,7 +361,7 @@ const library = [
   },
   {
     year: '1961',
-    history: [],
+    politicalHistory: [],
     levels: [
       6397.27,
       6397.27,
@@ -379,7 +379,7 @@ const library = [
   },
   {
     year: '1962',
-    history: [],
+    politicalHistory: [],
     levels: [
       6394.97,
       6395.03,
@@ -397,7 +397,7 @@ const library = [
   },
   {
     year: '1963',
-    history: [],
+    politicalHistory: [],
     levels: [
       6393.47,
       6393.63,
@@ -415,7 +415,7 @@ const library = [
   },
   {
     year: '1964',
-    history: [],
+    politicalHistory: [],
     levels: [
       6392.27,
       6392.19,
@@ -433,7 +433,7 @@ const library = [
   },
   {
     year: '1965',
-    history: [],
+    politicalHistory: [],
     levels: [
       6390.09,
       6390.06,
@@ -451,7 +451,7 @@ const library = [
   },
   {
     year: '1966',
-    history: [],
+    politicalHistory: [],
     levels: [
       6389.04,
       6389.21,
@@ -469,7 +469,7 @@ const library = [
   },
   {
     year: '1967',
-    history: [],
+    politicalHistory: [],
     levels: [
       6387.11,
       6387.28,
@@ -487,7 +487,7 @@ const library = [
   },
   {
     year: '1968',
-    history: [],
+    politicalHistory: [],
     levels: [
       6388.66,
       6388.86,
@@ -505,7 +505,7 @@ const library = [
   },
   {
     year: '1969',
-    history: [],
+    politicalHistory: [],
     levels: [
       6386.69,
       6387.15,
@@ -523,7 +523,7 @@ const library = [
   },
   {
     year: '1970',
-    history: [],
+    politicalHistory: [],
     levels: [
       6389.17,
       6389.52,
@@ -541,7 +541,7 @@ const library = [
   },
   {
     year: '1971',
-    history: [],
+    politicalHistory: [],
     levels: [
       6387.73,
       6387.75,
@@ -559,7 +559,7 @@ const library = [
   },
   {
     year: '1972',
-    history: [],
+    politicalHistory: [],
     levels: [
       6385.87,
       6385.93,
@@ -577,7 +577,7 @@ const library = [
   },
   {
     year: '1973',
-    history: [],
+    politicalHistory: [],
     levels: [
       6383.94,
       6384.06,
@@ -595,7 +595,7 @@ const library = [
   },
   {
     year: '1974',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.50,
       6382.67,
@@ -613,7 +613,7 @@ const library = [
   },
   {
     year: '1975',
-    history: [],
+    politicalHistory: [],
     levels: [
       6380.57,
       6380.55,
@@ -631,7 +631,7 @@ const library = [
   },
   {
     year: '1976',
-    history: [],
+    politicalHistory: [],
     levels: [
       6379.07,
       6379.06,
@@ -649,7 +649,7 @@ const library = [
   },
   {
     year: '1977',
-    history: [],
+    politicalHistory: [],
     levels: [
       6376.96,
       6376.86,
@@ -667,7 +667,7 @@ const library = [
   },
   {
     year: '1978',
-    history: [],
+    politicalHistory: [],
     levels: [
       6375.34,
       6375.64,
@@ -685,7 +685,7 @@ const library = [
   },
 {
   year: '1979',
-  history: [0],
+  politicalHistory: [0],
   levels: [
     6374.70,
     6374.86,
@@ -703,7 +703,7 @@ const library = [
 },
 {
   year: '1980',
-  history: [],
+  politicalHistory: [],
   levels: [
     6373.01,
     6373.39,
@@ -721,7 +721,7 @@ const library = [
 },
 {
   year: '1981',
-  history: [1],
+  politicalHistory: [1],
   levels: [
     6373.59,
     6373.78,
@@ -739,7 +739,7 @@ const library = [
 },
 {
   year: '1982',
-  history: [],
+  politicalHistory: [],
   levels: [
     6372.02,
     6372.06,
@@ -757,7 +757,7 @@ const library = [
   },
   {
     year: '1983',
-    history: [2],
+    politicalHistory: [2],
     levels: [
       6374.08,
       6374.60,
@@ -775,7 +775,7 @@ const library = [
   },
   {
     year: '1984',
-    history: [3,4],
+    politicalHistory: [3,4],
     levels: [
       6379.91,
       6380.31,
@@ -793,7 +793,7 @@ const library = [
   },
   {
     year: '1985',
-    history: [5,6],
+    politicalHistory: [5,6],
     levels: [
       6379.89,
       6380.00,
@@ -811,7 +811,7 @@ const library = [
   },
   {
     year: '1986',
-    history: [7],
+    politicalHistory: [7],
     levels: [
       6378.63,
       6378.66,
@@ -829,7 +829,7 @@ const library = [
   },
   {
     year: '1987',
-    history: [8],
+    politicalHistory: [8],
     levels: [
       6380.10,
       6380.20,
@@ -847,7 +847,7 @@ const library = [
   },
   {
     year: '1988',
-    history: [],
+    politicalHistory: [],
     levels: [
       6379.00,
       6379.10,
@@ -865,7 +865,7 @@ const library = [
   },
   {
     year: '1989',
-    history: [9,10,11,12,13],
+    politicalHistory: [9,10,11,12,13],
     levels: [
       6376.80,
       6376.80,
@@ -883,7 +883,7 @@ const library = [
   },
   {
     year: '1990',
-    history: [14,15,17],
+    politicalHistory: [14,15,17],
     levels: [
       6375.32,
       6375.57,
@@ -901,7 +901,7 @@ const library = [
   },
   {
     year: '1991',
-    history: [16,17],
+    politicalHistory: [16,17],
     levels: [
       6374.80,
       6374.80,
@@ -919,7 +919,7 @@ const library = [
   },
   {
     year: '1992',
-    history: [17],
+    politicalHistory: [17],
     levels: [
       6374.10,
       6374.20,
@@ -937,7 +937,7 @@ const library = [
   },
   {
     year: '1993',
-    history: [17],
+    politicalHistory: [17],
     levels: [
       6373.50,
       6373.90,
@@ -955,7 +955,7 @@ const library = [
   },
   {
     year: '1994',
-    history: [17,18],
+    politicalHistory: [17,18],
     levels: [
       6374.80,
       6375.10,
@@ -973,7 +973,7 @@ const library = [
   },
   {
     year: '1995',
-    history: [19,20],
+    politicalHistory: [19,20],
     levels: [
       6374.50,
       6375.10,
@@ -991,7 +991,7 @@ const library = [
   },
   {
     year: '1996',
-    history: [20],
+    politicalHistory: [20],
     levels: [
       6378.10,
       6378.40,
@@ -1009,7 +1009,7 @@ const library = [
   },
   {
     year: '1997',
-    history: [21],
+    politicalHistory: [21],
     levels: [
       6380.40,
       6381.10,
@@ -1027,7 +1027,7 @@ const library = [
   },
   {
     year: '1998',
-    history: [22],
+    politicalHistory: [22],
     levels: [
       6382.00,
       6382.40,
@@ -1045,7 +1045,7 @@ const library = [
   },
   {
     year: '1999',
-    history: [],
+    politicalHistory: [],
     levels: [
       6384.30,
       6384.60,
@@ -1063,7 +1063,7 @@ const library = [
   },
   {
     year: '2000',
-    history: [],
+    politicalHistory: [],
     levels: [
       6384.10,
       6384.30,
@@ -1081,7 +1081,7 @@ const library = [
   },
   {
     year: '2001',
-    history: [],
+    politicalHistory: [],
     levels: [
       6383.40,
       6383.60,
@@ -1099,7 +1099,7 @@ const library = [
   },
   {
     year: '2002',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.70,
       6382.70,
@@ -1117,7 +1117,7 @@ const library = [
   },
   {
     year: '2003',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.00,
       6382.20,
@@ -1135,7 +1135,7 @@ const library = [
   },
   {
     year: '2004',
-    history: [],
+    politicalHistory: [],
     levels: [
       6381.30,
       6381.40,
@@ -1153,7 +1153,7 @@ const library = [
   },
   {
     year: '2005',
-    history: [],
+    politicalHistory: [],
     levels: [
       6380.80,
       6381.10,
@@ -1171,7 +1171,7 @@ const library = [
   },
   {
     year: '2006',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.30,
       6382.60,
@@ -1189,7 +1189,7 @@ const library = [
   },
   {
     year: '2007',
-    history: [],
+    politicalHistory: [],
     levels: [
       6384.50,
       6384.60,
@@ -1207,7 +1207,7 @@ const library = [
   },
   {
     year: '2008',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.80,
       6383.10,
@@ -1225,7 +1225,7 @@ const library = [
   },
   {
     year: '2009',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.10,
       6382.20,
@@ -1243,7 +1243,7 @@ const library = [
   },
   {
     year: '2010',
-    history: [],
+    politicalHistory: [],
     levels: [
       6381.40,
       6381.70,
@@ -1261,7 +1261,7 @@ const library = [
   },
   {
     year: '2011',
-    history: [],
+    politicalHistory: [],
     levels: [
       6381.90,
       6382.00,
@@ -1279,7 +1279,7 @@ const library = [
   },
   {
     year: '2012',
-    history: [],
+    politicalHistory: [],
     levels: [
       6383.60,
       6383.84,
@@ -1297,7 +1297,7 @@ const library = [
   },
   {
     year: '2013',
-    history: [],
+    politicalHistory: [],
     levels: [
       6382.00,
       6382.05,
@@ -1315,7 +1315,7 @@ const library = [
   },
   {
     year: '2014',
-    history: [],
+    politicalHistory: [],
     levels: [
       6380.39,
       6380.55,
@@ -1333,7 +1333,7 @@ const library = [
   },
   {
     year: '2015',
-    history: [],
+    politicalHistory: [],
     levels: [
       6378.89,
       6378.95,
@@ -1351,7 +1351,7 @@ const library = [
   },
   {
     year: '2016',
-    history: [],
+    politicalHistory: [],
     levels: [
       6377.85,
       6378.00,
