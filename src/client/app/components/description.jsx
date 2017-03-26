@@ -1,6 +1,6 @@
 import React from 'react';
 import Level from './level.jsx'
-import HistoryBox from './history-box.jsx'
+import PoliticalHistoryBox from './political-history-box.jsx'
 import LevelContinuous from './level-continuous.jsx'
 import BirdCounts from './bird-counts.jsx'
 import library from '../data/years.jsx'
@@ -62,10 +62,7 @@ const Description = React.createClass({
   renderHistory() {
     if (this.historiesRanges(this.props.indices).length > 0) {
       return(
-        <div className='data-box full'>
-        <h3>History</h3>
-        <HistoryBox entries={this.historiesRanges(this.props.indices)} />
-        </div>
+        <PoliticalHistoryBox entries={this.historiesRanges(this.props.indices)} />
       )
     }
   },

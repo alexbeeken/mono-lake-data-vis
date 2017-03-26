@@ -1,5 +1,3 @@
-import histories from './histories.jsx'
-
 const library = [
   {
     year: '1941',
