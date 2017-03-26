@@ -1,32 +1,25 @@
 import React from 'react';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, HorizontalBarSeries, Hint} from 'react-vis';
-import birds1998 from '../data/1998birdcounts.jsx'
+import birds from '../data/birdcounts.jsx'
 
 const BirdCounts = React.createClass({
   data() {
     const years = this.props.years
     let output = []
     for (var i = 0; i < years.length; i++) {
-      if (years[i] == 1998) {
-        output.push(this.buildBar(years[i], birds1998))
-      }
-      if (years[i] == 1999) {
-
-      }
-      if (years[i] == 2000) {
-
+      if (years[i] == 1998 || years[i] == 1999 || years[i] == 2000) {
+        output.push(this.buildBar(years[i], birds))
       }
     }
     return output
   },
 
-  buildBar(year, birds) {
+  buildBar(year, birdsCount) {
     let output = []
-    for (var i = 0; i < birds.length; i++) {
-      if (birds[i]) {
-        console.log(birds[i])
+    for (var i = 0; i < birdsCount.length; i++) {
+      if (birdsCount[i]) {
         output.push(
-          { "x": birds[i]['COUNT'], "y": i, }
+          { "x": birdsCount[i]['COUNT'][year], "y": i, }
         )
       }
     }
@@ -34,7 +27,7 @@ const BirdCounts = React.createClass({
   },
 
   tickFormatter(tick) {
-    return birds1998[tick]['SPECIES']
+    return birds[tick]['SPECIES']
   },
 
   buildBarSeries() {
