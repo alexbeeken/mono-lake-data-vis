@@ -17,7 +17,7 @@ const Control = React.createClass({
   },
   render() {
     return (
-    <div>
+    <div className='page-header'>
       <div className='slider'>
         <Range
           value={this.state.value}
