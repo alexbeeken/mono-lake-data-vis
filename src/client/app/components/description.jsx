@@ -39,12 +39,12 @@ const Description = React.createClass({
     var output = []
     var years = this.fillInYearsArray(this.yearsRanges(this.props.indices))
     for (var i = indices[0]; i <= indices[1]; i++) {
-        let history = library[i]['politicalHistory']
-        for (var j = 0; j < history.length; j++) {
-          if (this.isUniqueValue(output, history[j])) {
-            output.push(history[j])
-          }
+      let history = library[i]['politicalHistory']
+      for (var j = 0; j < history.length; j++) {
+        if (this.isUniqueValue(output, history[j])) {
+          output.push(history[j])
         }
+      }
     }
     return output
   },
