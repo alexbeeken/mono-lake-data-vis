@@ -5,7 +5,7 @@ import WaterLevelContinuous from './water-level-continuous.jsx'
 import BirdCounts from './bird-counts.jsx'
 import library from '../data/years.jsx'
 
-const Description = React.createClass({
+const DataBoxes = React.createClass({
   levelsForIndices(indices) {
     var output = []
     for (var i = indices[0]; i <= indices[1]; i++) {
@@ -93,4 +93,4 @@ const Description = React.createClass({
   }
 });
 
-export default Description;
+export default DataBoxes;

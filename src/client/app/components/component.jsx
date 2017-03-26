@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider, { Range } from 'rc-slider';
-import Description from './description.jsx'
+import DataBoxes from './data-boxes.jsx'
 
 const Component = React.createClass({
   getInitialState() {
@@ -30,7 +30,7 @@ const Component = React.createClass({
         />
       </div>
       <div className='description'>
-        <Description
+        <DataBoxes
           indices={this.state.value || this.state.defaultValue}
         />
       </div>
