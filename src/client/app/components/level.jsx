@@ -2,6 +2,21 @@ import React from 'react';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries, Hint} from 'react-vis';
 import colors from '../data/colors.jsx'
 
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+]
+
 const Level = React.createClass({
   data() {
     const lines = this.props.levels
@@ -17,7 +32,7 @@ const Level = React.createClass({
     for (var i = 0; i < level.length; i++) {
       if (level[i]) {
         output.push(
-          { "x": i+1, "y":  level[i]}
+          { "x": i, "y":  level[i]}
         )
       }
     }
@@ -43,6 +58,10 @@ const Level = React.createClass({
     return output
   },
 
+  tickFormatter(tick) {
+    return months[tick]
+  },
+
   render() {
       return (
         <div className='data-box'>
@@ -55,7 +74,7 @@ const Level = React.createClass({
               onMouseLeave={this.inactive}>
               <HorizontalGridLines />
               {this.buildLineSeries()}
-              <XAxis title="months" />
+              <XAxis title="months" tickFormat={this.tickFormatter}/>
               <YAxis title="lake level"/>
             </XYPlot>
         </div>

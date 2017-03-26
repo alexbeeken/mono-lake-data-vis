@@ -2,6 +2,7 @@ import React from 'react';
 import Level from './level.jsx'
 import HistoryBox from './history-box.jsx'
 import LevelContinuous from './level-continuous.jsx'
+import BirdCounts from './bird-counts.jsx'
 import library from '../data/years.jsx'
 
 const Description = React.createClass({
@@ -79,6 +80,7 @@ const Description = React.createClass({
         <LevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
       </div>
       {this.renderHistory()}
+      <BirdCounts years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
     </div>
     );
   }
