@@ -2,7 +2,7 @@ import React from 'react';
 import Slider, { Range } from 'rc-slider';
 import DataBoxes from './data-boxes.jsx'
 
-const Component = React.createClass({
+const Control = React.createClass({
   getInitialState() {
     return {
       defaultValue: [0,1],
@@ -39,4 +39,4 @@ const Component = React.createClass({
   },
 });
 
-export default Component;
+export default Control;
