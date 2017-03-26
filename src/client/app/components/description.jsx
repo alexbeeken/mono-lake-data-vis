@@ -70,6 +70,19 @@ const Description = React.createClass({
     }
   },
 
+  renderBirdCounts() {
+    const years = this.yearsRanges(this.props.indices)
+    const firstYear = years[0]
+    const endYear = years[1]
+    if ((firstYear <= 1998 && endYear > 1997) ||
+        (firstYear <= 1999 && endYear > 1998) ||
+        (firstYear <= 2000 && endYear > 1999)) {
+      return(
+        <BirdCounts years={this.fillInYearsArray(years)}/>
+      )
+    }
+  },
+
   render() {
     return (
     <div>
@@ -80,7 +93,7 @@ const Description = React.createClass({
         <LevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
       </div>
       {this.renderHistory()}
-      <BirdCounts years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
+      {this.renderBirdCounts()}
     </div>
     );
   }
