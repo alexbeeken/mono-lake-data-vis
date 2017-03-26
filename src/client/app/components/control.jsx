@@ -29,7 +29,7 @@ const Control = React.createClass({
           allowCross={false}
         />
       </div>
-      <div className='description'>
+      <div className='data-boxes'>
         <DataBoxes
           indices={this.state.value || this.state.defaultValue}
         />

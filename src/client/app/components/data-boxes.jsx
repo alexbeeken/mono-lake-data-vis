@@ -82,13 +82,13 @@ const DataBoxes = React.createClass({
 
   render() {
     return (
-    <div>
-      <h2>{this.formatYears(this.yearsRanges(this.props.indices))}</h2>
-      <WaterLevel levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
-      <WaterLevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
-      {this.renderPoliticalHistory()}
-      {this.renderBirdCounts()}
-    </div>
+      <div>
+        <h3>{this.formatYears(this.yearsRanges(this.props.indices))}</h3>
+        <WaterLevel levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
+        <WaterLevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
+        {this.renderPoliticalHistory()}
+        {this.renderBirdCounts()}
+      </div>
     );
   }
 });

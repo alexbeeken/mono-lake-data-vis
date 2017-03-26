@@ -54,7 +54,7 @@ const WaterLevelContinuous = React.createClass({
   render() {
       return (
         <div className='data-box'>
-          <h3>Water Level Continuous</h3>
+          <h4>Water Level Continuous</h4>
           <XYPlot
             width={600}
             yDomain={[6371, 6420]}

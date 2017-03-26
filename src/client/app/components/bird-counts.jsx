@@ -49,7 +49,7 @@ const BirdCounts = React.createClass({
   render() {
       return (
         <div className='data-box'>
-          <h3>Bird Counts</h3>
+          <h4>Bird Counts</h4>
           <div className='birds'>
             <XYPlot
               width={550}

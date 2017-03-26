@@ -14,7 +14,7 @@ const CreeksHistoryBox = React.createClass({
   render() {
     return (
       <div className='data-box full'>
-        <h3>History of Mono Basin Creeks</h3>
+        <h4>History of Mono Basin Creeks</h4>
         <div className='history-entries'>
           <ul>{this.formattedEntries()}</ul>
         </div>

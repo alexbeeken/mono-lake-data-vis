@@ -65,7 +65,7 @@ const WaterLevel = React.createClass({
   render() {
       return (
         <div className='data-box'>
-          <h3>Water Level by Month</h3>
+          <h4>Water Level by Month</h4>
            <XYPlot
               width={600}
               height={300}

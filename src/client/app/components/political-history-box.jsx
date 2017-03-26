@@ -14,7 +14,7 @@ const PoliticalHistoryBox = React.createClass({
   render() {
     return (
       <div className='data-box full'>
-        <h3>Political History</h3>
+        <h4>Political History</h4>
         <div className='history-entries'>
           <ul>{this.formattedEntries()}</ul>
         </div>
