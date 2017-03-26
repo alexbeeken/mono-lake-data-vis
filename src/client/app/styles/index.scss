@@ -11,7 +11,6 @@
 .data-box {
   float: left;
   width: 50%;
-  overflow: scroll;
   h3 {
     text-align: center;
   }
@@ -21,6 +20,7 @@
 }
 
 .history-entries {
+  text-align: left;
   max-height: 300px;
   overflow: scroll;
 }
@@ -28,7 +28,6 @@
 .birds {
   padding-left: 20px;
   max-height: 900px;
-  overflow: scroll;
   .rv-xy-plot__inner {
     padding-left: 55px !important;
   }

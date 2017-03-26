@@ -1,5 +1,5 @@
 import React from 'react';
-import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
+import {XYPlot, XAxis, YAxis, HorizontalGridLines, AreaSeries} from 'react-vis';
 
 const partialYears = [
   0.083,
@@ -36,8 +36,8 @@ const WaterLevelContinuous = React.createClass({
     var output = []
     var lineData = this.data()
     return(
-      <LineSeries
-      color='black'
+      <AreaSeries
+      color='#99ccff'
       data={lineData}/>
     )
     return output

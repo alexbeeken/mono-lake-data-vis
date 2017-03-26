@@ -86,8 +86,8 @@ const DataBoxes = React.createClass({
         <h3>{this.formatYears(this.yearsRanges(this.props.indices))}</h3>
         <WaterLevel levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
         <WaterLevelContinuous levels={this.levelsForIndices(this.props.indices)} years={this.fillInYearsArray(this.yearsRanges(this.props.indices))}/>
-        {this.renderPoliticalHistory()}
         {this.renderBirdCounts()}
+        {this.renderPoliticalHistory()}
       </div>
     );
   }

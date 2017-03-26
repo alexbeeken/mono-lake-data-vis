@@ -48,11 +48,11 @@ const BirdCounts = React.createClass({
 
   render() {
       return (
-        <div className='data-box'>
+        <div className='data-box full'>
           <h4>Bird Counts</h4>
           <div className='birds'>
             <XYPlot
-              width={550}
+              width={1100}
               xDomain={[0, 2400]}
               height={700}
               onMouseEnter={this.active}

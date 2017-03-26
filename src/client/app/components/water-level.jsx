@@ -1,5 +1,5 @@
 import React from 'react';
-import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries, Hint} from 'react-vis';
+import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineMarkSeries, LineSeries, Hint} from 'react-vis';
 import colors from '../data/colors.jsx'
 
 const months = [
@@ -47,13 +47,24 @@ const WaterLevel = React.createClass({
     var output = []
     var lineData = this.data()
     for (var i = 0; i < lineData.length; i++) {
-      output.push(
-        <LineSeries
-        key={i}
-        color={this.color(this.props.years[i])}
-        data={lineData[i]}
-        />
-      )
+      if (lineData.length > 4) {
+        output.push(
+          <LineSeries
+          key={i}
+          color={this.color(this.props.years[i])}
+          data={lineData[i]}
+          />
+        )
+      } else {
+        output.push(
+          <LineMarkSeries
+          key={i}
+          color={this.color(this.props.years[i])}
+          data={lineData[i]}
+          strokeWidth={1}
+          />
+        )
+      }
     }
     return output
   },
