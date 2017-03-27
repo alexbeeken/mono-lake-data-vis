@@ -47,28 +47,36 @@ const BirdCounts = React.createClass({
   },
 
   render() {
-      return (
-        <div className='data-box full'>
-          <h4>Bird Counts</h4>
-          <div className='birds'>
-            <XYPlot
-              width={1100}
-              xDomain={[0, 2400]}
-              height={700}
-              onMouseEnter={this.active}
-              onMouseLeave={this.inactive}>
-              <HorizontalGridLines />
-              {this.buildBarSeries()}
-              <XAxis title='count'/>
-              <YAxis title='species'
-                tickFormat={this.tickFormatter}
-                tickSizeOuter={1}
-                tickTotal={32}
-                tickLabelAngle={-45}/>
-            </XYPlot>
-          </div>
-        </div>
-      );
+      const years = this.props.years
+      const firstYear = years[0]
+      const endYear = years[years.length - 1]
+      if ((firstYear <= 1998 && endYear > 1997) ||
+          (firstYear <= 1999 && endYear > 1998) ||
+          (firstYear <= 2000 && endYear > 1999)) {
+          return (
+            <div className='data-box full'>
+              <h4>Bird Counts</h4>
+              <div className='birds'>
+                <XYPlot
+                  width={1100}
+                  xDomain={[0, 2400]}
+                  height={700}
+                  onMouseEnter={this.active}
+                  onMouseLeave={this.inactive}>
+                  <HorizontalGridLines />
+                  {this.buildBarSeries()}
+                  <XAxis title='count'/>
+                  <YAxis title='species'
+                    tickFormat={this.tickFormatter}
+                    tickSizeOuter={1}
+                    tickTotal={32}
+                    tickLabelAngle={-45}/>
+                </XYPlot>
+              </div>
+            </div>
+          );
+      }
+      return null
   }
 });
 
