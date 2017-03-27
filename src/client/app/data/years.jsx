@@ -2,6 +2,26 @@ const library = [
   {
     year: '1941',
     politicalHistory: [],
+    creeksHistory: {
+      general: [
+        0, 1
+      ],
+      rushCreek: [
+
+      ],
+      parkerCreek: [
+
+      ],
+      walkerCreek: [
+
+      ],
+      leeViningCreek: [
+
+      ],
+      millCreek: [
+
+      ]
+    },
     levels: [
       null,
       null,

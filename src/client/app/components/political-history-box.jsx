@@ -38,7 +38,7 @@ const PoliticalHistoryBox = React.createClass({
   render() {
     if (this.entries().length > 0) {
       return (
-        <div className='data-box full'>
+        <div className='data-box'>
           <h4>Political History</h4>
         <div className='history-entries'>
           <ul>{this.formattedEntries()}</ul>

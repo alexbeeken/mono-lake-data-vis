@@ -62,7 +62,8 @@ const BirdCounts = React.createClass({
                   xDomain={[0, 2400]}
                   height={700}
                   onMouseEnter={this.active}
-                  onMouseLeave={this.inactive}>
+                  onMouseLeave={this.inactive}
+                  animation={true}>
                   <HorizontalGridLines />
                   {this.buildBarSeries()}
                   <XAxis title='count'/>

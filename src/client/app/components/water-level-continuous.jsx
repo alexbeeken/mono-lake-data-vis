@@ -37,8 +37,9 @@ const WaterLevelContinuous = React.createClass({
     var lineData = this.data()
     return(
       <AreaSeries
-      color='#99ccff'
-      data={lineData}/>
+        color='#99ccff'
+        data={lineData}
+      />
     )
     return output
   },

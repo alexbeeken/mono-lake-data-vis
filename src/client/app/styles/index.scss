@@ -21,8 +21,10 @@
 }
 
 .history-entries {
+  font-size: 10px;
   text-align: left;
   max-height: 300px;
+  overflow: scroll;
 }
 
 .birds {

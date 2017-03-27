@@ -58,10 +58,10 @@ const WaterLevel = React.createClass({
       } else {
         output.push(
           <LineMarkSeries
-          key={i}
-          color={this.color(this.props.years[i])}
-          data={lineData[i]}
-          strokeWidth={1}
+            key={i}
+            color={this.color(this.props.years[i])}
+            data={lineData[i]}
+            strokeWidth={1}
           />
         )
       }
@@ -81,7 +81,8 @@ const WaterLevel = React.createClass({
               width={600}
               height={300}
               onMouseEnter={this.active}
-              onMouseLeave={this.inactive}>
+              onMouseLeave={this.inactive}
+              animation={true}>
               <HorizontalGridLines />
               {this.buildLineSeries()}
               <XAxis title="months" tickFormat={this.tickFormatter}/>
