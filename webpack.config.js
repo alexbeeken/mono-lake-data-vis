@@ -6,10 +6,26 @@ var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 var config = {
     entry: APP_DIR + '/index.jsx',
-      output: {
-            path: BUILD_DIR,
-            filename: 'bundle.js'
-      },
+    output: {
+          path: BUILD_DIR,
+          filename: 'bundle.js'
+    },
+
+    plugins: [
+      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.UglifyJsPlugin({
+        minimize: true,
+        compress: {
+          warnings: false
+        }
+      }),
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
+      })
+    ],
+
     module : {
       loaders : [
       {

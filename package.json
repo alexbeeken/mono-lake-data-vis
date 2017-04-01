@@ -1,12 +1,14 @@
 {
   "name": "mono_lake",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mono lake data visualization site for science and education.",
+  "repository":"https://github.com/alexbeeken/mono-lake-data-viz",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot"
   },
-  "author": "",
+  "author": "Alex Beeken",
   "license": "ISC",
   "dependencies": {
     "babel-loader": "^6.4.1",
@@ -29,6 +31,7 @@
     "node-sass": "^4.5.1",
     "react-d3": "^0.4.0",
     "sass-loader": "^6.0.3",
-    "style-loader": "^0.16.0"
+    "style-loader": "^0.16.0",
+    "webpack-dev-server": "^2.4.2"
   }
 }
